@@ -1,4 +1,4 @@
-# CS611-Assignment < 4 >
+    # CS611-Assignment < 4 >
 ## <HEROES & MONSTERS>
 ---------------------------------------------------------------------------
 
@@ -411,11 +411,38 @@
 ## How to compile and run
 ---------------------------------------------------------------------------
 
-1. Navigate to the directory where my GameModule assignment has been uploaded
-2. Run the following instructions:
-   javac *.java
-   java Main
+## Steps to Run
 
+1. **Download the project**
+
+    - Clone the repo
+      ```bash
+      git clone https://github.com/josue-vl1/MonstersandHeroes.git
+      ```
+      or download the ZIP from GitHub and unzip it.
+
+2. **Open a terminal and go to the project root**
+
+   The project root is the folder that contains the `src` directory.
+
+   ```bash
+   cd MonstersandHeroes
+
+3. Compile the code
+
+**Make sure you’re still in the project root (where src lives).**
+
+  macOS / Linux / Git Bash:
+  ```bash
+    mkdir -p out
+    javac -d out $(find src -name "*.java")
+  ```
+4. Run the game
+
+**Run from the project root so the src/resources/*.txt files are found correctly:**
+```bash
+  java -cp out Main
+```
     
 
 ## Input/Output Example
